@@ -1,0 +1,70 @@
+<html>
+	<head>
+		<title> Formulário </title>
+	</head>
+	<body>
+
+		<form name="Cadastro" action="html_form_action.php" method="post"> 
+			<TABLE border='1'>
+				<TR> <TD> Nome:     </TD> <TD> 
+		<input type="text" name="Nome" required placeholder="Digite o nome aqui" >     
+</TD> </TR>
+<TR> <TD> Data Nasc:</TD> <TD> <input type="Date" name="Data">     </TD> </TR>
+<TR> <TD> Endereço: </TD> <TD> <input type="text" name="Endereco"> </TD> </TR>
+<TR> <TD> Telefone: </TD> <TD><input type="text" name="Telefone">  </TD> </TR>
+<TR> <TD> Email:    </TD> <TD><input type="email" name="Email">     </TD> </TR>
+<TR> <TD> RG:    </TD> <TD> <input type="text" name="RG"> </TD> </TR>
+<TR> <TD> CPF:    </TD> <TD> <input type="text" name="CPF"> </TD> </TR>
+<TR> <TD> Informe seu Sexo: </TD>  <TD><input type="radio" name="sexo" value="Homem"> Masculino 
+<input type="radio" name="sexo" value="Mulher" checked> Feminino  </TD> </TR>
+
+<TR> 
+<TD> Que tipo de veiculo você possui ?  </TD> 
+<TD> <input type="checkbox" name="Carro" value="Taxi"> Eu tenho um taxi 
+<input type="checkbox" name="Carro" value="UBER"> Eu tenho um uber </TD> </TR>
+<TR> 
+<TD> 
+<select name="Time">
+<option value="Nenhum">Selecione o Time
+<option value="Corinthians"> Corinthians
+<option value="São Paulo"> São Paulo
+<option value="Palmeiras"> Palmeiras
+<option value="Santos"> Santos
+</select> </TD> <TD>  </TD> </TR>
+
+<TR> <TD>Deixe aqui seu comentário:</TD> <TD> 
+<textarea rows="10" cols="30"></textarea> </TD> </TR>
+
+</TABLE>
+
+<br><br>
+<hr>
+
+<hr>
+<br><br>
+
+email : <input type="email"> <br>
+site : <input type="url"> <br>
+telefone : <input type="tel"> <br>
+busca : <input type="search"> <br>
+Nota : <input type="number" min="0" max="10" step="2"> <br>
+volume : <input type="range" min="0" max="10" step="2"> <br>
+data : <input type="date"> <br>
+hora : <input type="time"> <br>
+cor : <input type="color"> <br>
+Estado : <input type="text" list="uf"> <br>
+<datalist id="uf">
+	<option label = "MA" value="Maranhão"> </option>
+	<option label = "SP" value="São Paulo"> </option>
+	<option label = "SC" value="Santa Catarina"> </option>
+	<option label = "SE" value="Sergipe"> </option>
+</datalist>
+	
+	<br>
+	<br>
+<input type="submit" value="Enviar">
+<input type="button" value="botão"><br>
+
+</form>
+</body>
+</html>
